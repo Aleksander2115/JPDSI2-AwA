@@ -81,7 +81,7 @@ public class kredytBB {
 	// Put result in messages on AJAX call
 	public String licz_AJAX() {
 		if (liczRate()) {
-			ctx.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Rata miesięczna: ", null));
+			ctx.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Rata miesięczna: " + rata, null));
 		}
 		return null;
 	}
